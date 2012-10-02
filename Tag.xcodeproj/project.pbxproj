@@ -48,6 +48,7 @@
 		4CDDA5371569A3F800E779C5 /* Item.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CDDA5351569A3F800E779C5 /* Item.xib */; };
 		4CDDA53A1569A44200E779C5 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDDA5391569A44200E779C5 /* Item.m */; };
 		4CE55D811566A0A60066A842 /* StatusFailed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CE55D801566A0A60066A842 /* StatusFailed.png */; };
+		CCB5B04B161B6F3100078E90 /* TimeTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB5B04A161B6F3100078E90 /* TimeTracker.m */; };
 		DD4F7C0913C30F9F00825C6E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4F7C0813C30F9F00825C6E /* Cocoa.framework */; };
 		DD4F7C1513C30F9F00825C6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4F7C1413C30F9F00825C6E /* main.m */; };
 		DD4F7C1C13C30F9F00825C6E /* ApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4F7C1B13C30F9F00825C6E /* ApplicationDelegate.m */; };
@@ -128,6 +129,8 @@
 		4CDDA5391569A44200E779C5 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		4CE55D801566A0A60066A842 /* StatusFailed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = StatusFailed.png; path = Popup/StatusFailed.png; sourceTree = "<group>"; };
 		4CE55D831566B13F0066A842 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		CCB5B049161B6F3100078E90 /* TimeTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTracker.h; sourceTree = "<group>"; };
+		CCB5B04A161B6F3100078E90 /* TimeTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTracker.m; sourceTree = "<group>"; };
 		DD4F7C0413C30F9F00825C6E /* Tag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4F7C0813C30F9F00825C6E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DD4F7C0B13C30F9F00825C6E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -248,6 +251,8 @@
 				4C2D4883155DE41F00327391 /* Entry.m */,
 				4CDDA5331569A3F800E779C5 /* ItemController.h */,
 				4CDDA5341569A3F800E779C5 /* ItemController.m */,
+				CCB5B049161B6F3100078E90 /* TimeTracker.h */,
+				CCB5B04A161B6F3100078E90 /* TimeTracker.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -433,6 +438,7 @@
 				4CDDA53A1569A44200E779C5 /* Item.m in Sources */,
 				4CBB507F156EDDC00038C429 /* FocusableScrollView.m in Sources */,
 				4CBB5083156EF79B0038C429 /* EntryTextView.m in Sources */,
+				CCB5B04B161B6F3100078E90 /* TimeTracker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

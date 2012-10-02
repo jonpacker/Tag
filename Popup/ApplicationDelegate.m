@@ -13,7 +13,7 @@
 #import "PostRequest.h"
 #import "config.h"
 
-const char *API_KEY = KEY;
+const char *API_KEY = "KEY";
 
 @interface ApplicationDelegate () <StatusListener, PostListener>
 
