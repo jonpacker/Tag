@@ -8,6 +8,13 @@
 
 #import "TimeTracker.h"
 
+@interface TimeTracker() 
+
+- (void) startObservingProperties;
+- (void(^)(NSString*,NSError*)) errorReceiver;
+
+@end
+
 @implementation TimeTracker
 
 @synthesize isSignedIn, status;
@@ -18,10 +25,7 @@
     _onStatusChange = [[NSMutableArray alloc] init];
     _onSignedInChange = [[NSMutableArray alloc] init];
     
-    NSKeyValueObservingOptions kvoOpts = NSKeyValueObservingOptionNew;
-    
-    [self addObserver:self forKeyPath:@"isSignedIn" options:kvoOpts context:NULL];
-    [self addObserver:self forKeyPath:@"currentStatus" options:kvoOpts context:NULL];
+    [self startObservingProperties];
   }
   return self;
 }
@@ -33,6 +37,12 @@
   return self;
 }
 
+- (void) startObservingProperties {
+  NSKeyValueObservingOptions kvoOpts = NSKeyValueObservingOptionNew;
+  [self addObserver:self forKeyPath:@"isSignedIn" options:kvoOpts context:NULL];
+  [self addObserver:self forKeyPath:@"currentStatus" options:kvoOpts context:NULL];
+}
+
 - (void) onSignedInChange:(void (^)(NSError *, BOOL))callback {
   [_onSignedInChange addObject:Block_copy(callback)];
 }
@@ -41,23 +51,30 @@
   [_onStatusChange addObject:Block_copy(callback)];
 }
 
-- (void) fire:(NSArray *)listeners withError:(NSError *) andData:(NSDictionary *)data {
-  
-}
-
 - (void) observeValueForKeyPath:(NSString *)keyPath 
                        ofObject:(id)object 
                          change:(NSDictionary *)change 
                         context:(void *)context {
-  if ([keyPath isEqualToString:@"isSignedIn"]) {
+  id value = [change objectForKey:NSKeyValueChangeNewKey];
+  NSError* error = nil;
+  if ([keyPath hasPrefix:@".error"]) {
+    error = [value objectForKey:@"error"];
+    value = [value objectForKey:@"value"];
+    if ([value isKindOfClass:NSNull.class]) {
+      value = nil;
+    }
+  }
+  
+  if ([keyPath hasPrefix:@"isSignedIn"]) {
+    BOOL boolValue = value == nil ? NO : [value boolValue];
     [_onSignedInChange enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
       void (^callback)(NSError*, BOOL) = obj;
-      callback(nil, self.isSignedIn);
+      callback(error, boolValue);
     }];
-  } else if ([keyPath isEqualToString:@"currentStatus"]) {
+  } else if ([keyPath hasPrefix:@"currentStatus"]) {
     [_onStatusChange enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
       void (^callback)(NSError*, NSDictionary*) = obj;
-      callback(nil, self.status);
+      callback(error, value);
     }];
   }
 }

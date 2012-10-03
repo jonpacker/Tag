@@ -22,6 +22,9 @@
 - (void) onSignedInChange:(void (^)(NSError* error, BOOL isNowSignedIn))callback;
 - (void) onCurrentStatusChange:(void (^)(NSError* error, NSDictionary* newStatus))callback;
 
+// Custom KVC method w/ error
+- (void) setValue:(id)value forKey:(NSString *)key withError:(NSError*)error;
+
 @property (nonatomic, retain) NSDictionary* status;
 @property (nonatomic, setter=setSignedIn:) BOOL isSignedIn;
 
