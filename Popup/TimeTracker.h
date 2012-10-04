@@ -1,31 +1,24 @@
-//
-//  KolibriTimeTracker.h
-//  Tag
-//
-//  Created by Jon Packer on 02.10.12.
-//  Copyright (c) 2012 Creative Intersection. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
+#import "JPEventedObject.h"
 
-@interface TimeTracker : NSObject {
+FOUNDATION_EXPORT NSString * const TimeTrackerNSErrorNewValueKey;
+FOUNDATION_EXPORT NSString * const TimeTrackerNSErrorPropertyNameKey;
+
+@interface TimeTracker : JPEventedObject {
  @protected
   NSString* _apiKey;
   NSDictionary* _config;
- @private
-  NSMutableArray* _onStatusChange;
-  NSMutableArray* _onSignedInChange;
 }
 - (id) initWithApiKey:(NSString *)key;
 - (id) initWithApiKey:(NSString *)key andConfiguration:(NSDictionary *)config;
 
-- (void) onSignedInChange:(void (^)(NSError* error, BOOL isNowSignedIn))callback;
-- (void) onCurrentStatusChange:(void (^)(NSError* error, NSDictionary* newStatus))callback;
+- (void) onSignedInChange:(void (^)(NSError* error, id newSignedInStateOrNil))callback;
+- (void) onCurrentStatusChange:(void (^)(NSError* error, id newStatusOrNil))callback;
 
-// Custom KVC method w/ error
-- (void) setValue:(id)value forKey:(NSString *)key withError:(NSError*)error;
+- (void) didReceiveError:(NSError *)error forProperty:(NSString *)property withNewValueOrNil:(id)newValue;
 
 @property (nonatomic, retain) NSDictionary* status;
-@property (nonatomic, setter=setSignedIn:) BOOL isSignedIn;
+@property (nonatomic) BOOL isSignedIn;
+@property (nonatomic, retain) NSError* error;
 
 @end
