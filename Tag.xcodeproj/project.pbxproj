@@ -50,6 +50,7 @@
 		4CE55D811566A0A60066A842 /* StatusFailed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CE55D801566A0A60066A842 /* StatusFailed.png */; };
 		CCB5B04B161B6F3100078E90 /* TimeTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB5B04A161B6F3100078E90 /* TimeTracker.m */; };
 		CCB5B071161C07DA00078E90 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB5B070161C07DA00078E90 /* SenTestingKit.framework */; };
+		CCE87326161D7ADA008CA740 /* KolibriTimeTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE87325161D7ADA008CA740 /* KolibriTimeTracker.m */; };
 		CCEDD9E4161C8A7F00C80D40 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB5B078161C0B7700078E90 /* SenTestingKit.framework */; };
 		CCEDD9E5161C8A7F00C80D40 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4F7C0813C30F9F00825C6E /* Cocoa.framework */; };
 		CCEDD9EB161C8A7F00C80D40 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CCEDD9E9161C8A7F00C80D40 /* InfoPlist.strings */; };
@@ -154,6 +155,8 @@
 		CCB5B07E161C0B7700078E90 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CCB5B08C161C0C7900078E90 /* TimeTrackerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTrackerTests.h; sourceTree = "<group>"; };
 		CCB5B08D161C0C7900078E90 /* TimeTrackerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTrackerTests.m; sourceTree = "<group>"; };
+		CCE87324161D7ADA008CA740 /* KolibriTimeTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KolibriTimeTracker.h; sourceTree = "<group>"; };
+		CCE87325161D7ADA008CA740 /* KolibriTimeTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KolibriTimeTracker.m; sourceTree = "<group>"; };
 		CCEDD9E3161C8A7F00C80D40 /* TagTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TagTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCEDD9E8161C8A7F00C80D40 /* TagTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TagTests-Info.plist"; sourceTree = "<group>"; };
 		CCEDD9EA161C8A7F00C80D40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -361,6 +364,8 @@
 				CCB5B04A161B6F3100078E90 /* TimeTracker.m */,
 				CCEDDA06161D39B300C80D40 /* JPEventedObject.h */,
 				CCEDDA07161D39B300C80D40 /* JPEventedObject.m */,
+				CCE87324161D7ADA008CA740 /* KolibriTimeTracker.h */,
+				CCE87325161D7ADA008CA740 /* KolibriTimeTracker.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -600,6 +605,7 @@
 				4CBB5083156EF79B0038C429 /* EntryTextView.m in Sources */,
 				CCB5B04B161B6F3100078E90 /* TimeTracker.m in Sources */,
 				CCEDDA08161D39B300C80D40 /* JPEventedObject.m in Sources */,
+				CCE87326161D7ADA008CA740 /* KolibriTimeTracker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -760,6 +766,7 @@
 				CCEDD9F2161C8A7F00C80D40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD4F7BFE13C30F9F00825C6E /* Build configuration list for PBXProject "Tag" */ = {
 			isa = XCConfigurationList;
