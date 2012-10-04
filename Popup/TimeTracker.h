@@ -6,11 +6,9 @@ FOUNDATION_EXPORT NSString * const TimeTrackerNSErrorPropertyNameKey;
 
 @interface TimeTracker : JPEventedObject {
  @protected
-  NSString* _apiKey;
   NSDictionary* _config;
 }
-- (id) initWithApiKey:(NSString *)key;
-- (id) initWithApiKey:(NSString *)key andConfiguration:(NSDictionary *)config;
+- (id) initWithConfiguration:(NSDictionary *)config;
 
 - (void) onSignedInChange:(void (^)(NSError* error, id newSignedInStateOrNil))callback;
 - (void) onCurrentStatusChange:(void (^)(NSError* error, id newStatusOrNil))callback;

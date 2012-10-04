@@ -15,18 +15,11 @@ static const NSKeyValueObservingOptions KVOOpts = NSKeyValueObservingOptionNew;
 
 @synthesize isSignedIn = _isSignedIn, status = _status, error = _error;
 
-- (id) initWithApiKey:(NSString *)key {
+- (id) initWithConfiguration:(NSDictionary *)config {
   if ((self = [super init]) != nil) {
-    _apiKey = key;
+    _config = config;
     
     [self startObservingProperties];
-  }
-  return self;
-}
-
-- (id) initWithApiKey:(NSString *)key andConfiguration:(NSDictionary *)config {
-  if ((self = [self initWithApiKey:key]) != nil) {
-    _config = config;
   }
   return self;
 }
