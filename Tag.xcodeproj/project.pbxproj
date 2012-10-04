@@ -49,14 +49,12 @@
 		4CDDA53A1569A44200E779C5 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDDA5391569A44200E779C5 /* Item.m */; };
 		4CE55D811566A0A60066A842 /* StatusFailed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CE55D801566A0A60066A842 /* StatusFailed.png */; };
 		CCB5B04B161B6F3100078E90 /* TimeTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB5B04A161B6F3100078E90 /* TimeTracker.m */; };
-		CCB5B065161BFF5E00078E90 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB5B052161BFF5E00078E90 /* ASIAuthenticationDialog.m */; };
-		CCB5B066161BFF5E00078E90 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB5B055161BFF5E00078E90 /* ASIDataCompressor.m */; };
-		CCB5B067161BFF5E00078E90 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB5B057161BFF5E00078E90 /* ASIDataDecompressor.m */; };
-		CCB5B068161BFF5E00078E90 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB5B059161BFF5E00078E90 /* ASIDownloadCache.m */; };
-		CCB5B069161BFF5E00078E90 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB5B05B161BFF5E00078E90 /* ASIFormDataRequest.m */; };
-		CCB5B06A161BFF5E00078E90 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB5B05D161BFF5E00078E90 /* ASIHTTPRequest.m */; };
-		CCB5B06B161BFF5E00078E90 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB5B061161BFF5E00078E90 /* ASIInputStream.m */; };
-		CCB5B06C161BFF5E00078E90 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB5B063161BFF5E00078E90 /* ASINetworkQueue.m */; };
+		CCB5B071161C07DA00078E90 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB5B070161C07DA00078E90 /* SenTestingKit.framework */; };
+		CCEDD9E4161C8A7F00C80D40 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB5B078161C0B7700078E90 /* SenTestingKit.framework */; };
+		CCEDD9E5161C8A7F00C80D40 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4F7C0813C30F9F00825C6E /* Cocoa.framework */; };
+		CCEDD9EB161C8A7F00C80D40 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CCEDD9E9161C8A7F00C80D40 /* InfoPlist.strings */; };
+		CCEDD9F3161C8AA000C80D40 /* TimeTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB5B08D161C0C7900078E90 /* TimeTrackerTests.m */; };
+		CCEDDA08161D39B300C80D40 /* JPEventedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEDDA07161D39B300C80D40 /* JPEventedObject.m */; };
 		DD4F7C0913C30F9F00825C6E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4F7C0813C30F9F00825C6E /* Cocoa.framework */; };
 		DD4F7C1513C30F9F00825C6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4F7C1413C30F9F00825C6E /* main.m */; };
 		DD4F7C1C13C30F9F00825C6E /* ApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4F7C1B13C30F9F00825C6E /* ApplicationDelegate.m */; };
@@ -70,6 +68,16 @@
 		DD4F7C4B13C322FA00825C6E /* Status.png in Resources */ = {isa = PBXBuildFile; fileRef = DD4F7C4913C322FA00825C6E /* Status.png */; };
 		DD4F7C4C13C322FA00825C6E /* StatusHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = DD4F7C4A13C322FA00825C6E /* StatusHighlighted.png */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCEDDA01161C8CD800C80D40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD4F7BFB13C30F9F00825C6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD4F7C0313C30F9F00825C6E;
+			remoteInfo = Tag;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		4C27C1CD1574357500AD2F07 /* CopyFiles */ = {
@@ -139,26 +147,19 @@
 		4CE55D831566B13F0066A842 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		CCB5B049161B6F3100078E90 /* TimeTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTracker.h; sourceTree = "<group>"; };
 		CCB5B04A161B6F3100078E90 /* TimeTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTracker.m; sourceTree = "<group>"; };
-		CCB5B051161BFF5E00078E90 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
-		CCB5B052161BFF5E00078E90 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
-		CCB5B053161BFF5E00078E90 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
-		CCB5B054161BFF5E00078E90 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
-		CCB5B055161BFF5E00078E90 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
-		CCB5B056161BFF5E00078E90 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
-		CCB5B057161BFF5E00078E90 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
-		CCB5B058161BFF5E00078E90 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
-		CCB5B059161BFF5E00078E90 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
-		CCB5B05A161BFF5E00078E90 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
-		CCB5B05B161BFF5E00078E90 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
-		CCB5B05C161BFF5E00078E90 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
-		CCB5B05D161BFF5E00078E90 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
-		CCB5B05E161BFF5E00078E90 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
-		CCB5B05F161BFF5E00078E90 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
-		CCB5B060161BFF5E00078E90 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
-		CCB5B061161BFF5E00078E90 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
-		CCB5B062161BFF5E00078E90 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
-		CCB5B063161BFF5E00078E90 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
-		CCB5B064161BFF5E00078E90 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		CCB5B070161C07DA00078E90 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CCB5B078161C0B7700078E90 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CCB5B07C161C0B7700078E90 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CCB5B07D161C0B7700078E90 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CCB5B07E161C0B7700078E90 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CCB5B08C161C0C7900078E90 /* TimeTrackerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTrackerTests.h; sourceTree = "<group>"; };
+		CCB5B08D161C0C7900078E90 /* TimeTrackerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTrackerTests.m; sourceTree = "<group>"; };
+		CCEDD9E3161C8A7F00C80D40 /* TagTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TagTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCEDD9E8161C8A7F00C80D40 /* TagTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TagTests-Info.plist"; sourceTree = "<group>"; };
+		CCEDD9EA161C8A7F00C80D40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CCEDD9EF161C8A7F00C80D40 /* TagTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TagTests-Prefix.pch"; sourceTree = "<group>"; };
+		CCEDDA06161D39B300C80D40 /* JPEventedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEventedObject.h; sourceTree = "<group>"; };
+		CCEDDA07161D39B300C80D40 /* JPEventedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPEventedObject.m; sourceTree = "<group>"; };
 		DD4F7C0413C30F9F00825C6E /* Tag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4F7C0813C30F9F00825C6E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DD4F7C0B13C30F9F00825C6E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -186,10 +187,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CCEDD9DF161C8A7F00C80D40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCEDD9E4161C8A7F00C80D40 /* SenTestingKit.framework in Frameworks */,
+				CCEDD9E5161C8A7F00C80D40 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD4F7C0113C30F9F00825C6E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCB5B071161C07DA00078E90 /* SenTestingKit.framework in Frameworks */,
 				4CD461C21559D3E4000133D6 /* Carbon.framework in Frameworks */,
 				DD4F7C0913C30F9F00825C6E /* Cocoa.framework in Frameworks */,
 				4C27C1CC1574354500AD2F07 /* Sparkle.framework in Frameworks */,
@@ -202,7 +213,6 @@
 		CCB5B04C161BFEC500078E90 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
-				CCB5B050161BFF4600078E90 /* ASIHttpRequest */,
 				CCB5B04F161BFEF700078E90 /* ISO8601DateFormatter */,
 				CCB5B04E161BFEE200078E90 /* DDHotKeyCenter */,
 				CCB5B04D161BFED000078E90 /* JSONKit */,
@@ -237,40 +247,45 @@
 			name = ISO8601DateFormatter;
 			sourceTree = "<group>";
 		};
-		CCB5B050161BFF4600078E90 /* ASIHttpRequest */ = {
+		CCB5B07B161C0B7700078E90 /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CCB5B051161BFF5E00078E90 /* ASIAuthenticationDialog.h */,
-				CCB5B052161BFF5E00078E90 /* ASIAuthenticationDialog.m */,
-				CCB5B053161BFF5E00078E90 /* ASICacheDelegate.h */,
-				CCB5B054161BFF5E00078E90 /* ASIDataCompressor.h */,
-				CCB5B055161BFF5E00078E90 /* ASIDataCompressor.m */,
-				CCB5B056161BFF5E00078E90 /* ASIDataDecompressor.h */,
-				CCB5B057161BFF5E00078E90 /* ASIDataDecompressor.m */,
-				CCB5B058161BFF5E00078E90 /* ASIDownloadCache.h */,
-				CCB5B059161BFF5E00078E90 /* ASIDownloadCache.m */,
-				CCB5B05A161BFF5E00078E90 /* ASIFormDataRequest.h */,
-				CCB5B05B161BFF5E00078E90 /* ASIFormDataRequest.m */,
-				CCB5B05C161BFF5E00078E90 /* ASIHTTPRequest.h */,
-				CCB5B05D161BFF5E00078E90 /* ASIHTTPRequest.m */,
-				CCB5B05E161BFF5E00078E90 /* ASIHTTPRequestConfig.h */,
-				CCB5B05F161BFF5E00078E90 /* ASIHTTPRequestDelegate.h */,
-				CCB5B060161BFF5E00078E90 /* ASIInputStream.h */,
-				CCB5B061161BFF5E00078E90 /* ASIInputStream.m */,
-				CCB5B062161BFF5E00078E90 /* ASINetworkQueue.h */,
-				CCB5B063161BFF5E00078E90 /* ASINetworkQueue.m */,
-				CCB5B064161BFF5E00078E90 /* ASIProgressDelegate.h */,
+				CCB5B07C161C0B7700078E90 /* AppKit.framework */,
+				CCB5B07D161C0B7700078E90 /* CoreData.framework */,
+				CCB5B07E161C0B7700078E90 /* Foundation.framework */,
 			);
-			name = ASIHttpRequest;
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CCEDD9E6161C8A7F00C80D40 /* TagTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCB5B08C161C0C7900078E90 /* TimeTrackerTests.h */,
+				CCB5B08D161C0C7900078E90 /* TimeTrackerTests.m */,
+				CCEDD9E7161C8A7F00C80D40 /* Supporting Files */,
+			);
+			path = TagTests;
+			sourceTree = "<group>";
+		};
+		CCEDD9E7161C8A7F00C80D40 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCEDD9E8161C8A7F00C80D40 /* TagTests-Info.plist */,
+				CCEDD9E9161C8A7F00C80D40 /* InfoPlist.strings */,
+				CCEDD9EF161C8A7F00C80D40 /* TagTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		DD4F7BF913C30F9F00825C6E = {
 			isa = PBXGroup;
 			children = (
+				CCB5B070161C07DA00078E90 /* SenTestingKit.framework */,
 				4CD338B7155F2CF7009ADCC0 /* StatusIcon.png */,
 				4CD461C11559D3E3000133D6 /* Carbon.framework */,
 				DD4F7C0E13C30F9F00825C6E /* Sources */,
 				DD4F7C2813C3123E00825C6E /* User Interface */,
+				CCEDD9E6161C8A7F00C80D40 /* TagTests */,
 				DD4F7C0713C30F9F00825C6E /* Frameworks */,
 				DD4F7C0513C30F9F00825C6E /* Products */,
 				DD4F7C1013C30F9F00825C6E /* Tag-Info.plist */,
@@ -281,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				DD4F7C0413C30F9F00825C6E /* Tag.app */,
+				CCEDD9E3161C8A7F00C80D40 /* TagTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -293,6 +309,8 @@
 				DD4F7C0C13C30F9F00825C6E /* CoreData.framework */,
 				DD4F7C0D13C30F9F00825C6E /* Foundation.framework */,
 				DD4F7C0813C30F9F00825C6E /* Cocoa.framework */,
+				CCB5B078161C0B7700078E90 /* SenTestingKit.framework */,
+				CCB5B07B161C0B7700078E90 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -341,6 +359,8 @@
 				4CDDA5341569A3F800E779C5 /* ItemController.m */,
 				CCB5B049161B6F3100078E90 /* TimeTracker.h */,
 				CCB5B04A161B6F3100078E90 /* TimeTracker.m */,
+				CCEDDA06161D39B300C80D40 /* JPEventedObject.h */,
+				CCEDDA07161D39B300C80D40 /* JPEventedObject.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -419,6 +439,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CCEDD9E2161C8A7F00C80D40 /* TagTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCEDD9F0161C8A7F00C80D40 /* Build configuration list for PBXNativeTarget "TagTests" */;
+			buildPhases = (
+				CCEDD9DE161C8A7F00C80D40 /* Sources */,
+				CCEDD9DF161C8A7F00C80D40 /* Frameworks */,
+				CCEDD9E0161C8A7F00C80D40 /* Resources */,
+				CCEDD9E1161C8A7F00C80D40 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCEDDA02161C8CD800C80D40 /* PBXTargetDependency */,
+			);
+			name = TagTests;
+			productName = TagTests;
+			productReference = CCEDD9E3161C8A7F00C80D40 /* TagTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		DD4F7C0313C30F9F00825C6E /* Tag */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD4F7C2213C30F9F00825C6E /* Build configuration list for PBXNativeTarget "Tag" */;
@@ -458,11 +497,20 @@
 			projectRoot = "";
 			targets = (
 				DD4F7C0313C30F9F00825C6E /* Tag */,
+				CCEDD9E2161C8A7F00C80D40 /* TagTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CCEDD9E0161C8A7F00C80D40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCEDD9EB161C8A7F00C80D40 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD4F7C0213C30F9F00825C6E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -503,7 +551,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CCEDD9E1161C8A7F00C80D40 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		CCEDD9DE161C8A7F00C80D40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCEDD9F3161C8AA000C80D40 /* TimeTrackerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD4F7C0013C30F9F00825C6E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -527,20 +599,29 @@
 				4CBB507F156EDDC00038C429 /* FocusableScrollView.m in Sources */,
 				4CBB5083156EF79B0038C429 /* EntryTextView.m in Sources */,
 				CCB5B04B161B6F3100078E90 /* TimeTracker.m in Sources */,
-				CCB5B065161BFF5E00078E90 /* ASIAuthenticationDialog.m in Sources */,
-				CCB5B066161BFF5E00078E90 /* ASIDataCompressor.m in Sources */,
-				CCB5B067161BFF5E00078E90 /* ASIDataDecompressor.m in Sources */,
-				CCB5B068161BFF5E00078E90 /* ASIDownloadCache.m in Sources */,
-				CCB5B069161BFF5E00078E90 /* ASIFormDataRequest.m in Sources */,
-				CCB5B06A161BFF5E00078E90 /* ASIHTTPRequest.m in Sources */,
-				CCB5B06B161BFF5E00078E90 /* ASIInputStream.m in Sources */,
-				CCB5B06C161BFF5E00078E90 /* ASINetworkQueue.m in Sources */,
+				CCEDDA08161D39B300C80D40 /* JPEventedObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		CCEDDA02161C8CD800C80D40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD4F7C0313C30F9F00825C6E /* Tag */;
+			targetProxy = CCEDDA01161C8CD800C80D40 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		CCEDD9E9161C8A7F00C80D40 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCEDD9EA161C8A7F00C80D40 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		DD4F7C1D13C30F9F00825C6E /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -553,6 +634,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CCEDD9F1161C8A7F00C80D40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tag.app/Contents/MacOS/Tag";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TagTests/TagTests-Prefix.pch";
+				INFOPLIST_FILE = "TagTests/TagTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CCEDD9F2161C8A7F00C80D40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tag.app/Contents/MacOS/Tag";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TagTests/TagTests-Prefix.pch";
+				INFOPLIST_FILE = "TagTests/TagTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		DD4F7C2013C30F9F00825C6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -606,6 +719,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/With Garbage Collection\"",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Popup/Tag-Prefix.pch";
@@ -624,6 +738,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/With Garbage Collection\"",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Popup/Tag-Prefix.pch";
@@ -638,6 +753,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CCEDD9F0161C8A7F00C80D40 /* Build configuration list for PBXNativeTarget "TagTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCEDD9F1161C8A7F00C80D40 /* Debug */,
+				CCEDD9F2161C8A7F00C80D40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		DD4F7BFE13C30F9F00825C6E /* Build configuration list for PBXProject "Tag" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
